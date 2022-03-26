@@ -19,6 +19,15 @@ Write JavaScript below that logs:
 const allPar = document.querySelectorAll("p");
 console.log(allPar);
 
+const siteHeader = document.querySelector(".site-header");
+console.log(siteHeader);
+
+const jumboText = document.querySelector("#jumbotron-text");
+console.log(jumboText);
+
+const primeryContent = document.querySelectorAll(".primary-content p");
+console.log(primeryContent);
+
 /*
 Task 2
 ======
@@ -26,9 +35,12 @@ Task 2
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
 
-const siteHeader = document.querySelector(".site-header");
-console.log(siteHeader);
+const alertButton = document.querySelector ("#alertBtn");
 
+
+alertButton.addEventListener("click", () => {
+    alert("Thanks for visiting Bikes for Refugees!");
+});
 
 /*
 Task 3
@@ -37,8 +49,16 @@ Task 3
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
 
-const jumboText = document.querySelector("#jumbotron-text");
-console.log(jumboText);
+const changeButton = document.querySelector("#bgrChangeBtn");
+
+
+
+changeButton.addEventListener("click", () => {
+    function changeBgFunc(color) {
+        document.body.style.background = color;
+    }
+    changeBgFunc("red");
+});
 
 /*
 Task 4
@@ -47,8 +67,7 @@ Task 4
 When a user clicks the ‘Add some text’ button, a new paragraph should be added inside the section that says “LEARN MORE”
 */
 
-const primeryContent = document.querySelectorAll(".primary-content p");
-console.log(primeryContent);
+
 
 /*
 Task 5
