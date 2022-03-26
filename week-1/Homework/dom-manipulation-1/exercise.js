@@ -16,6 +16,8 @@ Write JavaScript below that logs:
 
 */
 
+const allPar = document.querySelectorAll("p");
+console.log(allPar);
 
 /*
 Task 2
@@ -23,6 +25,9 @@ Task 2
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
+
+const siteHeader = document.querySelector(".site-header");
+console.log(siteHeader);
 
 
 /*
@@ -32,6 +37,8 @@ Task 3
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
 
+const jumboText = document.querySelector("#jumbotron-text");
+console.log(jumboText);
 
 /*
 Task 4
@@ -40,7 +47,8 @@ Task 4
 When a user clicks the ‘Add some text’ button, a new paragraph should be added inside the section that says “LEARN MORE”
 */
 
-
+const primeryContent = document.querySelectorAll(".primary-content p");
+console.log(primeryContent);
 
 /*
 Task 5
